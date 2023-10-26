@@ -1,0 +1,114 @@
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="content has-text-justified">
+      <p>
+        <strong>Background:</strong> In recent months, multi-agent systems
+        driven by LLMs have received rapidly increasing attention. Researchers
+        found that the problem-solving ability of LLMs can be significantly
+        enhanced through collaboration between multiple agents.
+      </p>
+
+      <p>
+        <strong>Topic addressed:</strong> Our present work focuses on a
+        fundamental problem in multi-agent systems: consensus seeking. When
+        multiple LLMs are used to solve the same task, they may have different
+        solutions initially, but they can eventually reach the same solution
+        through continuous negotiation. This is essentially a consensus-seeking
+        process. Consensus seeking also widely exists in collective
+        decision-making systems such as animal groups and human societies. It is
+        also a core research problem in the fields of multi-robot systems.
+      </p>
+
+      <p>
+        <strong>Research gap:</strong> Consensus seeking via LLMs has not been
+        specifically studied so far. There are many important questions that
+        need to be answered. For instance, if we use multiple LLMs to assist us
+        in negotiations or problem-solving, it is important for us to know
+        whether they can eventually reach a consensus amongst themselves. If
+        they can, how long would it take and what factors can influence the
+        final consensus outcome? If they cannot, what factors may lead to this
+        failure? The answers to these questions play a pivotal role in our
+        proper utilization of LLMs.
+      </p>
+
+      <p>
+        <strong>Problem setup:</strong> In this work, we study a specific
+        consensus-seeking task. Specifically, in an LLM-driven multi-agent
+        system, each agent starts with an initial state represented by a
+        numerical value. The objective for them is to continuously adjust their
+        states to achieve the same final state. Throughout this process, each
+        agent can perceive the states of the other agents, and based on this
+        information, formulate strategies to adjust their own states.
+      </p>
+
+      <p><strong>Findings:</strong></p>
+
+      <ol>
+        <li>
+          <strong>Consensus strategy:</strong> When not explicitly directed on
+          which strategy the agents should adopt, they often tend to use an
+          <em>average strategy</em> for consensus seeking although they may also
+          use some other strategies occasionally. The average strategy means
+          they set their state in the next round as the average value of the
+          current states of all agents. This is a reasonable strategy that shows
+          the agent is considerate and collaborative.
+        </li>
+      </ol>
+      {}
+      <p>
+        Interestingly, the average consensus algorithm is a widely adopted
+        algorithm in the field of multi-agent cooperative control. In that
+        context, each agent is modeled as a dynamic system governed by ordinary
+        differential or difference equations (ODEs). Our present work reveals
+        the relationship between the behavior exhibited by
+        <em>LLM-driven</em> and <em>ODE-driven</em> multi-agent systems. The
+        existing theoretical results of consensus algorithms can provide a
+        theoretical foundation to help us understand LLM-driven multi-agent
+        systems.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Impact of personality:</strong> A person's personality often
+          plays a significant role in negotiation and collaboration tasks.
+          Motivated by this, we examined two types of personalities:
+          <em>stubborn</em> and <em>suggestible</em>. Compared to suggestible
+          agents, stubborn agents tend to insist on their views and are less
+          likely to change easily. We observed that stubborn agents have a
+          dominant influence on the final consensus value of the group, leading
+          the entire system to display a leader-follower structure.
+        </li>
+
+        {}
+        <li>
+          <strong>Impact of topology:</strong> The flow of information in a
+          multi-agent system corresponds to a network topology, which plays a
+          pivotal role in negotiations. We examined several typical network
+          topologies. For instance, when the network is fully connected, the
+          exchange of information is most efficient, resulting in fast consensus
+          convergence speed. When the network is not fully connected, the
+          consensus convergence speed slows down. In the case of directed
+          graphs, a leader-follower hierarchical structure emerges since some
+          agents have a dominant influence on the final consensus outcome. In
+          some systems, due to the interplay between personality and topology, a
+          consensus may not be reached, leading to clustering outcomes.
+        </li>
+
+        {}
+        <li>
+          <strong>Impact of agent number:</strong> It is shown by Monte Carlo
+          simulation that as the number of agents increases, the variance of the
+          final consensus value decreases and the mean gets closer to the
+          average value of the initial agent states. This observation suggests
+          that multiple agents can alleviate the randomness or hallucinations of
+          the system so that a consistent outcome can be obtained. Moreover,
+          while a small number of suggestible agents may cause oscillations of
+          their states, a large number of them can suppress the occurrence of
+          oscillations, suggesting that increasing the number of agents may
+          stabilize group decision-making.
+        </li>
+        {}
+      </ol>
+    </div>
+  </div>
+</section>

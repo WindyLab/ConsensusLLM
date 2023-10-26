@@ -19,6 +19,25 @@ function setInterpolationImage(i) {
   $('#interpolation-image-wrapper').empty().append(image);
 }
 
+function initializeCarousel(element, slidesToShow) {
+  var options = {
+    slidesToScroll: 1,
+    slidesToShow: slidesToShow,
+    loop: true,
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 3000,
+  }
+
+  var carousels = bulmaCarousel.attach(element, options);
+
+  for (var i = 0; i < carousels.length; i++) {
+    carousels[i].on('before:show', state => {
+      console.log(state);
+    });
+  }
+}
+
 
 $(document).ready(function() {
     // Check for click events on the navbar burger icon
@@ -29,25 +48,11 @@ $(document).ready(function() {
 
     });
 
-    var options = {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-			loop: true,
-			infinite: true,
-			autoplay: false,
-			autoplaySpeed: 3000,
-    }
-
-		// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
-
-    // Loop on each carousel initialized
-    for(var i = 0; i < carousels.length; i++) {
-    	// Add listener to  event
-    	carousels[i].on('before:show', state => {
-    		console.log(state);
-    	});
-    }
+		 // Initialize carousels with different slidesToShow values
+     initializeCarousel('.carousel-type-1', 1); // For elements with class .carousel-type-1
+     initializeCarousel('.carousel-type-2', 2); // For elements with class .carousel-type-2
+     initializeCarousel('.carousel-type-3', 3); // For elements with class .carousel-type-3
+   
 
     // Access to bulmaCarousel instance of an element
     var element = document.querySelector('#my-element');

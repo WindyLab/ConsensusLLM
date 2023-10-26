@@ -1,0 +1,58 @@
+title: "Multi-agent consensus seeking via LLM"
+authors:
+  - "xxx"
+  - "xxx"
+  - "xxx"
+links:
+  - "www.baidu.com"
+  - "www.baidu.com"
+  - "www.baidu.com"
+organizations:
+  - "Westlake University"
+publication_links:
+  - "https://arxiv.org/pdf/2011.12948"
+  - "https://arxiv.org/abs/2011.12948"
+  - "https://www.youtube.com/watch?v=MrKrnHhk8IA"
+  - "https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code"
+  - "https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code/releases/tag/v1.0.1"
+publication_names:
+  - "Paper"
+  - "ArXiv"
+  - "Youtube"
+  - "GitHub"
+  - "Data"
+publication_icons:
+  - "fas fa-file-pdf"
+  - "ai ai-arxiv"
+  - "fab fa-youtube"
+  - "fab fa-github"
+  - "far fa-images"
+
+abstract_content: |
+  Multi-agent systems driven by large language models (LLMs) have shown 
+  promising abilities for solving complex tasks in a collaborative manner. 
+  This work considers a fundamental problem in multi-agent collaboration: 
+  <em>consensus seeking</em>. In particular, when multiple agents work 
+  together, we are interested in how they can reach a consensus through 
+  inter-agent negotiation given that they have different initial solutions 
+  for a task. To that end, this work studies an abstract consensus-seeking 
+  task, where the state of each agent is a numerical number and they negotiate 
+  with each other to reach a consensus value. We found that when not explicitly 
+  directed on which strategy should be adopted, the LLM-driven agents tend to 
+  use the <em>average strategy</em> for consensus seeking although they may 
+  also use some other strategies occasionally. Moreover, this work analyzes the 
+  impact of agents' <em>personalities</em> and <em>network topologies</em> on 
+  the negotiation process. It is shown that stubborn agents tend to dominate the 
+  consensus outcome, resulting in leader-follower structures, while network 
+  topologies can influence the speed and success of consensus convergence. The 
+  significance of this work lies in its potential to lay the foundations for 
+  understanding the behaviors of LLM-driven multi-agent systems to reach consensus 
+  in collaborative problem-solving tasks.
+
+bibtex: |
+    @article{???,
+      author    = {???},
+      title     = {???},
+      journal   = {???},
+      year      = {???},
+    }
