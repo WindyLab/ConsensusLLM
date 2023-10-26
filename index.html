@@ -1,471 +1,437 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Paper website" />
-    <meta name="keywords" content="LLM, Multi-agent, consensus" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Multi-agent consensus seeking via LLM</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="./static/css/bulma.min.css" />
-    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
-    <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
-    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-    />
-    <link rel="stylesheet" href="./static/css/index.css" />
-    <link rel="icon" href="./static/images/favicon.svg" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Paper website" />
+  <meta name="keywords" content="LLM, Multi-agent, consensus" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-agent consensus seeking via LLM</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script defer src="./static/js/fontawesome.all.min.js"></script>
-    <script src="./static/js/bulma-carousel.min.js"></script>
-    <script src="./static/js/bulma-slider.min.js"></script>
-    <script src="./static/js/index.js"></script>
-  </head>
-  <body>
-    <section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Multi-agent consensus seeking via LLM</h1>
-          <div class="is-size-5 publication-authors">
-      <span class="author-block">
-        <a href=www.baidu.com>xxx</a><sup>1</sup>,
-      </span>
-      
-      <span class="author-block">
-        <a href=www.baidu.com>xxx</a><sup>1</sup>,
-      </span>
-      
-      <span class="author-block">
-        <a href=www.baidu.com>xxx</a><sup>1</sup>,
-      </span>
-      </div>
-          <div class="is-size-5 publication-authors"><span class="author-block"><sup>1</sup>Westlake University</span></div>
+  <link rel="stylesheet" href="./static/css/bulma.min.css" />
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="./static/css/index.css" />
+  <link rel="icon" href="./static/images/logo.png" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-      <span class="link-block">
-        <a href=https://arxiv.org/pdf/2011.12948
-            class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-              <i class="fas fa-file-pdf"></i>
-          </span>
-          <span>Paper</span>
-          </a>
-      </span>
-    
-      <span class="link-block">
-        <a href=https://arxiv.org/abs/2011.12948
-            class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-              <i class="ai ai-arxiv"></i>
-          </span>
-          <span>ArXiv</span>
-          </a>
-      </span>
-    
-      <span class="link-block">
-        <a href=https://www.youtube.com/watch?v=MrKrnHhk8IA
-            class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-              <i class="fab fa-youtube"></i>
-          </span>
-          <span>Youtube</span>
-          </a>
-      </span>
-    
-      <span class="link-block">
-        <a href=https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code
-            class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-              <i class="fab fa-github"></i>
-          </span>
-          <span>GitHub</span>
-          </a>
-      </span>
-    
-      <span class="link-block">
-        <a href=https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code/releases/tag/v1.0.1
-            class="external-link button is-normal is-rounded is-dark">
-          <span class="icon">
-              <i class="far fa-images"></i>
-          </span>
-          <span>Data</span>
-          </a>
-      </span>
-    </div>
+            <h1 class="title is-1 publication-title">Multi-agent consensus seeking via LLM</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href=www.baidu.com>xxx</a><sup>1</sup>,
+              </span>
+
+              <span class="author-block">
+                <a href=www.baidu.com>xxx</a><sup>1</sup>,
+              </span>
+
+              <span class="author-block">
+                <a href=www.baidu.com>xxx</a><sup>1</sup>,
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors"><span class="author-block"><sup>1</sup>Westlake University</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href=https://arxiv.org/pdf/2011.12948 class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href=https://arxiv.org/abs/2011.12948 class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>ArXiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href=https://www.youtube.com/watch?v=MrKrnHhk8IA
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Youtube</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href=https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href=https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code/releases/tag/v1.0.1
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img
-        src="./static/images/structure.svg"
-        class="interpolation-image"
-        alt="structure"
-      />
-      <h2 class="subtitle has-text-centered">System Structure</h2>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-      <p>
-        Multi-agent systems driven by large language models (LLMs) have shown 
-promising abilities for solving complex tasks in a collaborative manner. 
-This work considers a fundamental problem in multi-agent collaboration: 
-<em>consensus seeking</em>. In particular, when multiple agents work 
-together, we are interested in how they can reach a consensus through 
-inter-agent negotiation given that they have different initial solutions 
-for a task. To that end, this work studies an abstract consensus-seeking 
-task, where the state of each agent is a numerical number and they negotiate 
-with each other to reach a consensus value. We found that when not explicitly 
-directed on which strategy should be adopted, the LLM-driven agents tend to 
-use the <em>average strategy</em> for consensus seeking although they may 
-also use some other strategies occasionally. Moreover, this work analyzes the 
-impact of agents' <em>personalities</em> and <em>network topologies</em> on 
-the negotiation process. It is shown that stubborn agents tend to dominate the 
-consensus outcome, resulting in leader-follower structures, while network 
-topologies can influence the speed and success of consensus convergence. The 
-significance of this work lies in its potential to lay the foundations for 
-understanding the behaviors of LLM-driven multi-agent systems to reach consensus 
-in collaborative problem-solving tasks.
-
-      </p>
-    </div>
+  </section>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="./static/images/structure.svg" class="interpolation-image" alt="structure" />
+        <h2 class="subtitle has-text-centered">System Structure</h2>
       </div>
     </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="content has-text-justified">
-      <p>
-        <strong>Background:</strong> In recent months, multi-agent systems
-        driven by LLMs have received rapidly increasing attention. Researchers
-        found that the problem-solving ability of LLMs can be significantly
-        enhanced through collaboration between multiple agents.
-      </p>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Multi-agent systems driven by large language models (LLMs) have shown
+              promising abilities for solving complex tasks in a collaborative manner.
+              This work considers a fundamental problem in multi-agent collaboration:
+              <em>consensus seeking</em>. In particular, when multiple agents work
+              together, we are interested in how they can reach a consensus through
+              inter-agent negotiation given that they have different initial solutions
+              for a task. To that end, this work studies an abstract consensus-seeking
+              task, where the state of each agent is a numerical number and they negotiate
+              with each other to reach a consensus value. We found that when not explicitly
+              directed on which strategy should be adopted, the LLM-driven agents tend to
+              use the <em>average strategy</em> for consensus seeking although they may
+              also use some other strategies occasionally. Moreover, this work analyzes the
+              impact of agents' <em>personalities</em> and <em>network topologies</em> on
+              the negotiation process. It is shown that stubborn agents tend to dominate the
+              consensus outcome, resulting in leader-follower structures, while network
+              topologies can influence the speed and success of consensus convergence. The
+              significance of this work lies in its potential to lay the foundations for
+              understanding the behaviors of LLM-driven multi-agent systems to reach consensus
+              in collaborative problem-solving tasks.
 
-      <p>
-        <strong>Topic addressed:</strong> Our present work focuses on a
-        fundamental problem in multi-agent systems: consensus seeking. When
-        multiple LLMs are used to solve the same task, they may have different
-        solutions initially, but they can eventually reach the same solution
-        through continuous negotiation. This is essentially a consensus-seeking
-        process. Consensus seeking also widely exists in collective
-        decision-making systems such as animal groups and human societies. It is
-        also a core research problem in the fields of multi-robot systems.
-      </p>
-
-      <p>
-        <strong>Research gap:</strong> Consensus seeking via LLMs has not been
-        specifically studied so far. There are many important questions that
-        need to be answered. For instance, if we use multiple LLMs to assist us
-        in negotiations or problem-solving, it is important for us to know
-        whether they can eventually reach a consensus amongst themselves. If
-        they can, how long would it take and what factors can influence the
-        final consensus outcome? If they cannot, what factors may lead to this
-        failure? The answers to these questions play a pivotal role in our
-        proper utilization of LLMs.
-      </p>
-
-      <p>
-        <strong>Problem setup:</strong> In this work, we study a specific
-        consensus-seeking task. Specifically, in an LLM-driven multi-agent
-        system, each agent starts with an initial state represented by a
-        numerical value. The objective for them is to continuously adjust their
-        states to achieve the same final state. Throughout this process, each
-        agent can perceive the states of the other agents, and based on this
-        information, formulate strategies to adjust their own states.
-      </p>
-
-      <p><strong>Findings:</strong></p>
-
-      <ol style="list-style-type: none; padding-left: 0;" class="custom-ordered-list">
-        <li>
-          <strong>Consensus strategy:</strong> When not explicitly directed on
-          which strategy the agents should adopt, they often tend to use an
-          <em>average strategy</em> for consensus seeking although they may also
-          use some other strategies occasionally. The average strategy means
-          they set their state in the next round as the average value of the
-          current states of all agents. This is a reasonable strategy that shows
-          the agent is considerate and collaborative.
-        </li>
-      <!-- </ol> -->
-      <!-- <section class="hero is-light is-small"> -->
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel-type-2 results-carousel">
-    <div class="item">
-      <img src=static/images/policy\policy1.svg
-        class="interpolation-image"
-        alt="Result."/>
-
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Average strategy
-      </h3>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    <div class="item">
-      <img src=static/images/policy\policy2.svg
-        class="interpolation-image"
-        alt="Result."/>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+        <p>
+          <strong>Background:</strong> In recent months, multi-agent systems
+          driven by LLMs have received rapidly increasing attention. Researchers
+          found that the problem-solving ability of LLMs can be significantly
+          enhanced through collaboration between multiple agents.
+        </p>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Average strategy
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/policy\policy3.svg
-        class="interpolation-image"
-        alt="Result."/>
+        <p>
+          <strong>Topic addressed:</strong> Our present work focuses on a
+          fundamental problem in multi-agent systems: consensus seeking. When
+          multiple LLMs are used to solve the same task, they may have different
+          solutions initially, but they can eventually reach the same solution
+          through continuous negotiation. This is essentially a consensus-seeking
+          process. Consensus seeking also widely exists in collective
+          decision-making systems such as animal groups and human societies. It is
+          also a core research problem in the fields of multi-robot systems.
+        </p>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Suggestable strategy
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/policy\policy4.svg
-        class="interpolation-image"
-        alt="Result."/>
+        <p>
+          <strong>Research gap:</strong> Consensus seeking via LLMs has not been
+          specifically studied so far. There are many important questions that
+          need to be answered. For instance, if we use multiple LLMs to assist us
+          in negotiations or problem-solving, it is important for us to know
+          whether they can eventually reach a consensus amongst themselves. If
+          they can, how long would it take and what factors can influence the
+          final consensus outcome? If they cannot, what factors may lead to this
+          failure? The answers to these questions play a pivotal role in our
+          proper utilization of LLMs.
+        </p>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Stubborn strategy
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/policy\policy5.svg
-        class="interpolation-image"
-        alt="Result."/>
+        <p>
+          <strong>Problem setup:</strong> In this work, we study a specific
+          consensus-seeking task. Specifically, in an LLM-driven multi-agent
+          system, each agent starts with an initial state represented by a
+          numerical value. The objective for them is to continuously adjust their
+          states to achieve the same final state. Throughout this process, each
+          agent can perceive the states of the other agents, and based on this
+          information, formulate strategies to adjust their own states.
+        </p>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Erroneous strategy
-      </h3>
-    </div>
-    </div>
-    </div>
-    <!-- <h2 class="subtitle has-text-centered">The common strategies that the agents may adopt</h2> -->
-  </div>
-<!-- </section> -->
+        <p><strong>Findings:</strong></p>
 
-      <p>
-        Interestingly, the average consensus algorithm is a widely adopted
-        algorithm in the field of multi-agent cooperative control. In that
-        context, each agent is modeled as a dynamic system governed by ordinary
-        differential or difference equations (ODEs). Our present work reveals
-        the relationship between the behavior exhibited by
-        <em>LLM-driven</em> and <em>ODE-driven</em> multi-agent systems. The
-        existing theoretical results of consensus algorithms can provide a
-        theoretical foundation to help us understand LLM-driven multi-agent
-        systems.
-      </p>
+        <ol style="list-style-type: none; padding-left: 0;" class="custom-ordered-list">
+          <li>
+            <strong>Consensus strategy:</strong> When not explicitly directed on
+            which strategy the agents should adopt, they often tend to use an
+            <em>average strategy</em> for consensus seeking although they may also
+            use some other strategies occasionally. The average strategy means
+            they set their state in the next round as the average value of the
+            current states of all agents. This is a reasonable strategy that shows
+            the agent is considerate and collaborative.
+          </li>
+          <!-- </ol> -->
+          <!-- <section class="hero is-light is-small"> -->
+          <div class="hero-body">
+            <div class="container">
+              <div id="results-carousel" class="carousel-type-2 results-carousel">
+                <div class="item">
+                  <img src=static/images/policy\policy1.svg class="interpolation-image" alt="Result." />
 
-      <p>
-        We further analyze the influence of some important factors.
-      </p>
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Average strategy
+                  </h3>
+                </div>
 
-      <!-- <ol style="list-style-type: none; padding-left: 0;" class="custom-ordered-list" start="2"> -->
-        <li>
-          <strong>Impact of personality:</strong> A person's personality often
-          plays a significant role in negotiation and collaboration tasks.
-          Motivated by this, we examined two types of personalities:
-          <em>stubborn</em> and <em>suggestible</em>. Compared to suggestible
-          agents, stubborn agents tend to insist on their views and are less
-          likely to change easily. We observed that stubborn agents have a
-          dominant influence on the final consensus value of the group, leading
-          the entire system to display a leader-follower structure.
-        </li>
+                <div class="item">
+                  <img src=static/images/policy\policy2.svg class="interpolation-image" alt="Result." />
 
-        <!-- <section class="hero is-light is-small"> -->
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel-type-2 results-carousel">
-    <div class="item">
-      <img src=static/images/personality\personality1.svg
-        class="interpolation-image"
-        alt="Result."/>
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Average strategy
+                  </h3>
+                </div>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Agent 1 is stubborn; agent 2 is suggestible
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/personality\personality2.svg
-        class="interpolation-image"
-        alt="Result."/>
+                <div class="item">
+                  <img src=static/images/policy\policy3.svg class="interpolation-image" alt="Result." />
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Agent 1 is suggestible; agent 2 is also suggestible
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/personality\personality3.svg
-        class="interpolation-image"
-        alt="Result."/>
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Suggestable strategy
+                  </h3>
+                </div>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Agent 1 is stubborn; agent 2 is also stubborn
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/personality\personality4.svg
-        class="interpolation-image"
-        alt="Result."/>
+                <div class="item">
+                  <img src=static/images/policy\policy4.svg class="interpolation-image" alt="Result." />
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Agents 1-10: suggestible
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/personality\personality5.svg
-        class="interpolation-image"
-        alt="Result."/>
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Stubborn strategy
+                  </h3>
+                </div>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Agents 1-7: stubborn, agents 8-10: suggestible
-      </h3>
-    </div>
-    </div>
-    </div>
-    <!-- <h2 class="subtitle has-text-centered">The common strategies that the agents may adopt</h2> -->
-  </div>
-<!-- </section> -->
+                <div class="item">
+                  <img src=static/images/policy\policy5.svg class="interpolation-image" alt="Result." />
 
-        <li>
-          <strong>Impact of topology:</strong> The flow of information in a
-          multi-agent system corresponds to a network topology, which plays a
-          pivotal role in negotiations. We examined several typical network
-          topologies. For instance, when the network is fully connected, the
-          exchange of information is most efficient, resulting in fast consensus
-          convergence speed. When the network is not fully connected, the
-          consensus convergence speed slows down. In the case of directed
-          graphs, a leader-follower hierarchical structure emerges since some
-          agents have a dominant influence on the final consensus outcome. In
-          some systems, due to the interplay between personality and topology, a
-          consensus may not be reached, leading to clustering outcomes.
-        </li>
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Erroneous strategy
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- <h2 class="subtitle has-text-centered">The common strategies that the agents may adopt</h2> -->
+          </div>
+          <!-- </section> -->
 
-        <!-- <section class="hero is-light is-small"> -->
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel-type-1 results-carousel">
-    <div class="item">
-      <img src=static/images/topology\topology1.svg
-        class="interpolation-image"
-        alt="Result."/>
+          <p>
+            Interestingly, the average consensus algorithm is a widely adopted
+            algorithm in the field of multi-agent cooperative control. In that
+            context, each agent is modeled as a dynamic system governed by ordinary
+            differential or difference equations (ODEs). Our present work reveals
+            the relationship between the behavior exhibited by
+            <em>LLM-driven</em> and <em>ODE-driven</em> multi-agent systems. The
+            existing theoretical results of consensus algorithms can provide a
+            theoretical foundation to help us understand LLM-driven multi-agent
+            systems.
+          </p>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Fully connected
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/topology\topology2.svg
-        class="interpolation-image"
-        alt="Result."/>
+          <p>
+            We further analyze the influence of some important factors.
+          </p>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        Not fully connected
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/topology\topology3.svg
-        class="interpolation-image"
-        alt="Result."/>
+          <!-- <ol style="list-style-type: none; padding-left: 0;" class="custom-ordered-list" start="2"> -->
+          <li>
+            <strong>Impact of personality:</strong> A person's personality often
+            plays a significant role in negotiation and collaboration tasks.
+            Motivated by this, we examined two types of personalities:
+            <em>stubborn</em> and <em>suggestible</em>. Compared to suggestible
+            agents, stubborn agents tend to insist on their views and are less
+            likely to change easily. We observed that stubborn agents have a
+            dominant influence on the final consensus value of the group, leading
+            the entire system to display a leader-follower structure.
+          </li>
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        A leader-follower structure
-      </h3>
-    </div>
-    
-    <div class="item">
-      <img src=static/images/topology\topology4.svg
-        class="interpolation-image"
-        alt="Result."/>
+          <!-- <section class="hero is-light is-small"> -->
+          <div class="hero-body">
+            <div class="container">
+              <div id="results-carousel" class="carousel-type-2 results-carousel">
+                <div class="item">
+                  <img src=static/images/personality\personality1.svg class="interpolation-image" alt="Result." />
 
-      <h3 style="font-size: 14px;" class="subtitle has-text-centered">
-        A chain structure
-      </h3>
-    </div>
-    </div>
-    </div>
-    <!-- <h2 class="subtitle has-text-centered">The common strategies that the agents may adopt</h2> -->
-  </div>
-<!-- </section> -->
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Agent 1 is stubborn; agent 2 is suggestible
+                  </h3>
+                </div>
 
-        <li>
-          <strong>Impact of agent number:</strong> It is shown by Monte Carlo
-          simulation that as the number of agents increases, the variance of the
-          final consensus value decreases and the mean gets closer to the
-          average value of the initial agent states. This observation suggests
-          that multiple agents can alleviate the randomness or hallucinations of
-          the system so that a consistent outcome can be obtained. Moreover,
-          while a small number of suggestible agents may cause oscillations of
-          their states, a large number of them can suppress the occurrence of
-          oscillations, suggesting that increasing the number of agents may
-          stabilize group decision-making.
-        </li>
-        
-    <div style="display: flex; justify-content: center; align-items: center">
-      <img src="./static/images/box_plot.svg" class="interpolation-image" alt="Result."
-        style="width: 70%; max-width: 100%; height: auto" />
+                <div class="item">
+                  <img src=static/images/personality\personality2.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Agent 1 is suggestible; agent 2 is also suggestible
+                  </h3>
+                </div>
+
+                <div class="item">
+                  <img src=static/images/personality\personality3.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Agent 1 is stubborn; agent 2 is also stubborn
+                  </h3>
+                </div>
+
+                <div class="item">
+                  <img src=static/images/personality\personality4.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Agents 1-10: suggestible
+                  </h3>
+                </div>
+
+                <div class="item">
+                  <img src=static/images/personality\personality5.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Agents 1-7: stubborn, agents 8-10: suggestible
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- <h2 class="subtitle has-text-centered">The common strategies that the agents may adopt</h2> -->
+          </div>
+          <!-- </section> -->
+
+          <li>
+            <strong>Impact of topology:</strong> The flow of information in a
+            multi-agent system corresponds to a network topology, which plays a
+            pivotal role in negotiations. We examined several typical network
+            topologies. For instance, when the network is fully connected, the
+            exchange of information is most efficient, resulting in fast consensus
+            convergence speed. When the network is not fully connected, the
+            consensus convergence speed slows down. In the case of directed
+            graphs, a leader-follower hierarchical structure emerges since some
+            agents have a dominant influence on the final consensus outcome. In
+            some systems, due to the interplay between personality and topology, a
+            consensus may not be reached, leading to clustering outcomes.
+          </li>
+
+          <!-- <section class="hero is-light is-small"> -->
+          <div class="hero-body">
+            <div class="container">
+              <div id="results-carousel" class="carousel-type-1 results-carousel">
+                <div class="item">
+                  <img src=static/images/topology\topology1.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Fully connected
+                  </h3>
+                </div>
+
+                <div class="item">
+                  <img src=static/images/topology\topology2.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    Not fully connected
+                  </h3>
+                </div>
+
+                <div class="item">
+                  <img src=static/images/topology\topology3.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    A leader-follower structure
+                  </h3>
+                </div>
+
+                <div class="item">
+                  <img src=static/images/topology\topology4.svg class="interpolation-image" alt="Result." />
+
+                  <h3 style="font-size: 14px;" class="subtitle has-text-centered">
+                    A chain structure
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- <h2 class="subtitle has-text-centered">The common strategies that the agents may adopt</h2> -->
+          </div>
+          <!-- </section> -->
+
+          <li>
+            <strong>Impact of agent number:</strong> It is shown by Monte Carlo
+            simulation that as the number of agents increases, the variance of the
+            final consensus value decreases and the mean gets closer to the
+            average value of the initial agent states. This observation suggests
+            that multiple agents can alleviate the randomness or hallucinations of
+            the system so that a consistent outcome can be obtained. Moreover,
+            while a small number of suggestible agents may cause oscillations of
+            their states, a large number of them can suppress the occurrence of
+            oscillations, suggesting that increasing the number of agents may
+            stabilize group decision-making.
+          </li>
+
+          <div style="display: flex; justify-content: center; align-items: center">
+            <img src="./static/images/box_plot.svg" class="interpolation-image" alt="Result."
+              style="width: 70%; max-width: 100%; height: auto" />
+          </div>
+
+        </ol>
+      </div>
     </div>
-  
-      </ol>
-    </div>
-  </div>
-</section><section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{???,
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{???,
   author    = {???},
   title     = {???},
   journal   = {???},
   year      = {???},
 }</code></pre>
-  </div>
-</section>
-<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This page was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page
-            and licensed under a
-            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
-              Attribution-ShareAlike 4.0 International
-              License</a>.
-          </p>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project
+              page
+              and licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
+                Attribution-ShareAlike 4.0 International
+                License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-  </body>
+  </footer>
+</body>
+
 </html>
