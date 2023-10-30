@@ -190,6 +190,17 @@ body {
   margin-top: 0;
 }
 
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 仅让图片水平居中 */
+  width: 100%;
+}
+
+.item img { 
+  align-self: center;
+}
+
 .figure {
   display: flex; 
   flex-direction: column;
@@ -198,6 +209,24 @@ body {
 }
 
 .figure h2 {
+  font-size: 18px;
+}
+
+
+h3 {
   margin-top: 0 !important;
   font-size: 16px;
+  margin-bottom: 0 !important;
 }
+
+h2 {
+  font-size: 18px;
+}
+
+.a_2d-framework {
+  max-width: 600px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
