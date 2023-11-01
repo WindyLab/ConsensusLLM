@@ -186,7 +186,7 @@ body {
 }
 
 .hero-body .container h3 {
-  font-size: 14px; 
+  font-size: 16px; 
   margin-top: 0;
 }
 
@@ -209,7 +209,8 @@ body {
 }
 
 .figure h2 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: lighter;
 }
 
 
@@ -217,10 +218,12 @@ h3 {
   margin-top: 0 !important;
   font-size: 16px;
   margin-bottom: 0 !important;
+  font-weight: lighter !important;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: lighter !important;
 }
 
 .a_2d-framework {
