@@ -53,9 +53,11 @@ abstract_content:
     in collaborative problem-solving tasks.
 
 bibtex: |
-    @article{???,
-      author    = {???},
-      title     = {???},
-      journal   = {???},
-      year      = {???},
+    @misc{chen2023multiagent,
+      title={Multi-Agent Consensus Seeking via Large Language Models},
+      author={Huaben Chen and Wenkang Ji and Lufeng Xu and Shiyu Zhao},
+      year={2023},
+      eprint={2310.20151},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
     }
