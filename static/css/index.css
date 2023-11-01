@@ -234,4 +234,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-
+.section {
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
