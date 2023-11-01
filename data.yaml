@@ -24,7 +24,7 @@ publication_names:
   - "GitHub"
   - "Data"
 publication_icons:
-  - "fas fa-file-pdf"
+  # - "fas fa-file-pdf"
   - "ai ai-arxiv"
   - "fab fa-youtube"
   - "fab fa-github"
