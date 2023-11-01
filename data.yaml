@@ -12,13 +12,13 @@ links:
 organizations:
   - "Westlake University"
 publication_links:
-  - "https://arxiv.org/pdf/2310.20151.pdf"
+  # - "https://arxiv.org/pdf/2310.20151.pdf"
   - "https://arxiv.org/abs/2310.20151"
   - "https://westlakeintelligentrobotics.github.io/ConsensusLLM"
   - "https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code"
   - "https://github.com/WestlakeIntelligentRobotics/ConsensusLLM-code/releases/tag/v1.0.1"
 publication_names:
-  - "Paper"
+  # - "Paper"
   - "ArXiv"
   - "Youtube (Comming soon)"
   - "GitHub"
