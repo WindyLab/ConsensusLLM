@@ -177,7 +177,7 @@ body {
 }
 
 .hero-body h2 {
-  font-size: 16px; 
+  font-size: 1em; 
   margin-bottom: 20px;
 }
 
@@ -186,7 +186,7 @@ body {
 }
 
 .hero-body .container h3 {
-  font-size: 16px; 
+  font-size: 1em; 
   margin-top: 0;
 }
 
@@ -209,21 +209,23 @@ body {
 }
 
 .figure h2 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: lighter;
+  margin-top: 0 !important;
 }
 
 
 h3 {
   margin-top: 0 !important;
-  font-size: 16px;
+  font-size: 1em;
   margin-bottom: 0 !important;
   font-weight: lighter !important;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: lighter !important;
+  margin-top: 10px !important;
 }
 
 .a_2d-framework {
