@@ -206,6 +206,7 @@ body {
   flex-direction: column;
   justify-content: center; 
   align-items: center;
+  max-width: 1000px;
 }
 
 .figure h2 {
@@ -237,4 +238,8 @@ h2 {
 .section {
   padding-bottom: 24px;
   padding-top: 24px;
+}
+
+.c_trajectory {
+  max-width: 1000px !important;
 }
