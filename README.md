@@ -4,8 +4,13 @@ This is the repository that contains source code for the [ConsensusLLM website](
 
 If you find ConsensusLLM useful for your work please cite:
 ```
-@article{park2021nerfies
-  todo: ADD LATER
+@misc{chen2023multiagent,
+  title={Multi-Agent Consensus Seeking via Large Language Models},
+  author={Huaben Chen and Wenkang Ji and Lufeng Xu and Shiyu Zhao},
+  year={2023},
+  eprint={2310.20151},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL}
 }
 ```
 
