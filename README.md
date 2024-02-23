@@ -1,6 +1,6 @@
 # ConsensusLLM
 
-This is the repository that contains source code for the [ConsensusLLM website](https://nerfies.github.io).
+This is the repository that contains source code for the [ConsensusLLM website](https://westlakeintelligentrobotics.github.io/ConsensusLLM/).
 
 If you find ConsensusLLM useful for your work please cite:
 ```
